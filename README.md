@@ -4,7 +4,7 @@ Description
 A Node.js and Express API to manage student data with profile picture uploads.
 Uses MongoDB for storage and includes robust error handling for file uploads and API operations.
 
-Features
+Features:
 
 Connect to MongoDB using Mongoose.
 
