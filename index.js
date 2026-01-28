@@ -13,12 +13,6 @@ const app = express();
 connectDB();
 
 // --------------------
-// Middlewares
-// --------------------
-// ONLY JSON (never urlencoded for file upload apps)
-// app.use(express.json());....
-
-// --------------------
 // Routes
 // --------------------
 app.use("/api/students", studRoutes);
