@@ -5,8 +5,6 @@ const Student = require("../models/student.model");
 const multer = require("multer");
 const path = require('path');
 
-// router.use(express.json());
-// router.use(express.urlencoded({ extended: false }));
 
 const storage = multer.diskStorage({
   destination:(req,file,cb)=>{
@@ -63,22 +61,7 @@ router.get("/:id", async (req, res) => {
 })
 
 
-// Add new student:
-// router.post("/",upload.single("profile_pic"), async (req, res,next) => {
-//          try {
-//                   // const student = await Student.create(req.body);
-//                   const student = new Student(req.body);
-//                   if(req.file){
-//                     student.profile_pic = req.file.filename
-//                   }
-//                   const Newstudent = await student.save()
-//                   res.status(201).json(Newstudent);
-                  
-//          } catch (err) {
-//                   res.status(400).json({ message: err.message }) //fix
-//                 // next(err) //fixed
-//          }
-// })
+
 
 
 router.post(
@@ -101,19 +84,6 @@ router.post(
     }
   }
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -153,9 +123,4 @@ router.delete("/:id", async (req, res) => {
 
 module.exports = router;
 
-// ....................................................
-// message is a built-in property of the JavaScript Error object.
-// err is automatically created when an error is thrown inside try.
 
-// we use .put > for UPDATE//
-// we use .delete > for DELETE//
