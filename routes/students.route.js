@@ -1,5 +1,5 @@
 const express = require("express");
-// const app= express();    // we use router so dont use this
+// const app= express();  
 const router = express.Router();
 const Student = require("../models/student.model");
 const multer = require("multer");
