@@ -1,5 +1,5 @@
 Student Management API with File Uploads
-Description
+Description.
 
 A Node.js and Express API to manage student data with profile picture uploads.
 Uses MongoDB for storage and includes robust error handling for file uploads and API operations.
